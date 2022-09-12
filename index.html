@@ -43,7 +43,7 @@
 			<img src="img/google.png" alt="Google ">
 			<a href="https://www.google.com"> <img src="img/google.png" alt=""></a>
 
-			<a href="./doc/imageMap.html">Link to image map</a>
+			<a href="doc/imageMap.html">Link to image map</a>
 		</div>
 
 
@@ -121,6 +121,169 @@
 
 
 		<div class="practice">
+			<h1>07 September Practice</h1>
+			<p>Form Practice</p>
+			<form name="FirstForm">
+
+				<!--Username & Password-->
+				<p>First Name:
+					<input type="text" name="FirstName">
+				</p>
+				<p>Password:
+					<input type="password" name="PassWord">
+				</p>
+
+				<!--Submit button (don't use)-->
+				<p><input type="submit" value="click me!"></p>
+
+				<!--Check Boxes-->
+				<p>Please select your favorite movies.</p>
+				<p><input type="checkbox" name="movie" value="Cars">Cars</p>
+				<p><input type="checkbox" name="movie" value="ToyStory">Toy Story</p>
+				<p><input type="checkbox" name="movie" value="Movie3">3</p>
+				<p><input type="checkbox" name="movie" value="Movie4">4</p>
+				<p><input type="checkbox" name="movie" value="Movie5">5</p>
+				<p><input type="checkbox" name="movie" value="Movie6">6</p>
+
+				<!--Multiple Choice / "radio buttons"-->
+				<p>Select the answer.</p>
+				<p>A.<input type="radio" name="Question1" value="A" checked>Answer 1</p>
+				<p>B.<input type="radio" name="Question1" value="B">Answer 2</p>
+				<p>C.<input type="radio" name="Question1" value="C">Answer 3</p>
+				<p>D.<input type="radio" name="Question1" value="D">Answer 4</p>
+
+				<!--reset button-->
+				<input type="reset" value="reset">
+
+				<!--File uploads (Don't use)-->
+				<p>Select a File <input type="file" name="songs"> </p>
+
+				<!--Comment Box-->
+				<p><textarea name="comment" cols="30" rows="10"></textarea></p>
+
+				<!--Select / dropdown-->
+				<!--name should be descriptive-->
+				<select size="2" name="color" id="colormenu" multiple>
+					<option value="None" selected>None</option>
+					<option value="Red">Red</option>
+					<option value="Blue">Blue</option>
+					<option value="Green">Green</option>
+					<option value="Yellow">Yellow</option>
+					<option value="Brown">Brown</option>
+					<option value="Black">Black</option>
+					<option value="White">White</option>
+				</select>
+
+				<!--hidden-->
+				<p><input type="hidden" name="user" value="1234"></p>
+			</form>
+
+		</div>
+
+		<div class="practice">
+
+			<h1>12 September</h1>
+
+			<fieldset>
+				<legend>This is form group-Button test</legend>
+			</fieldset>
+
+			<label for="imgbutton">Add Image Button</label>
+
+			<input type="image" id="imgbutton" src="img/add.gif" onclick="alert('!!!')">
+
+			<select name="Button" id="Button">
+				<option value="1">Button</option>
+				<option value="2">2Button</option>
+			</select>
+			<!-- Use the one above^^^^ -->
+			<br>
+			<!-- Not as good below -->
+			<button>
+				Add<img src="img/add.gif" alt="add button">
+			</button>
+
+			<fieldset>HTML5 form controls</fieldset>
+			<p>What is your favorite color
+				<input type="color" name="favcolor">
+			</p>
+
+			<p>
+				<input type="date" name="selectdate">
+			</p>
+			<p>
+				Email: <input type="email" placeholder="username@usca.edu" autofocus>
+			</p>
+			<p>*Name: <input type="name" placeholder="John" required></p>
+			<p><input type="submit" value="click to submit"></p>
+			<p>Please enter your phone #<input type="tel" placeholder="xxx-xxx-xxxx" pattern="\d{3}-\d{3}-\d{4}"></p>
+			<!-- \d = numbers, {3} = 3 of \d -->
+
+			<h2>Attributes</h2>
+			<h3>Auto Focus</h3>
+			<p>automatically focuses, can only be used once.</p>
+			<h3>Placeholder</h3>
+			<p>"Email@domainname.com"</p>
+			<h3>required</h3>
+			<!-- Floting Labels -->
+
+			<h2>Create a New Account</h2>
+			<p>*Name: <input type="text" name="fname" placeholder="First Name" required>
+				<input type="text" name="lname" placeholder="Last Name" required>
+			</p>
+			<p>Phone Number: <input type="tel" name="phonenum" placeholder="xxx-xxx-xxxx" pattern="]\d{3}-\d{3}-\d{4}">
+			</p>
+			<p>*Password: <input type="password" name="pass" required></p>
+			<h3>*Birthday</h3>
+			<select name="month" id="month">
+				<option value="Jan">Jan</option>
+				<option value="Feb">Feb</option>
+				<option value="Mar">Mar</option>
+				<option value="Apr">Apr</option>
+				<option value="May">May</option>
+				<option value="Jun">Jun</option>
+				<option value="Jul">Jul</option>
+				<option value="Aug">Aug</option>
+				<option value="Sep">Sep</option>
+				<option value="Oct">Oct</option>
+				<option value="Nov">Nov</option>
+				<option value="Dec">Dec</option>
+			</select>
+			<select name="day" id="day">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			
+
 
 
 		</div>
